@@ -1,16 +1,16 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "improved_mobs_scaling_health_integration",
+  "name": "ImprovedMobs ScalingHealth Integration",
+  "description": "Stitch ImprovedMobs and ScalingHealth together, and let them do what they do best.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["CleanroomMC"],
-  "credits": "Authors of this project",
-  "logoFile": "",
+  "authorList": ["MARYT Studio"],
+  "credits": "RisingInIris2017, LubangSF",
+  "logoFile": "logo.png",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["scalinghealth", "improvedmobs"]
 }
 ]
