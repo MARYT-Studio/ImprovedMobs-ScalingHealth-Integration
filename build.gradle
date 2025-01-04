@@ -68,6 +68,8 @@ minecraft {
     // Example:
     // injectedTags.put('VERSION', project.version)
     // injectedTags.put('MOD_ID', project.archives_base_name)
+     injectedTags.put('VERSION', project.version)
+     injectedTags.put('MOD_ID', project.archives_base_name)
 }
 
 // Generate a group.archives_base_name.Tags class
@@ -105,6 +107,16 @@ dependencies {
 
     // Example of deobfuscating a dependency
     // implementation rfg.deobf('curse.maven:had-enough-items-557549:4543375')
+    implementation rfg.deobf('curse.maven:scaling-health-248027:2816920')
+    implementation rfg.deobf('curse.maven:improved-mobs-282639:3078656')
+    implementation rfg.deobf('curse.maven:tenshilib-312040:3066464')
+    implementation rfg.deobf('curse.maven:silent-lib-242998:2851111')
+
+    // Debug tools
+    runtimeOnly rfg.deobf('curse.maven:neat-238372:2595310')
+    runtimeOnly rfg.deobf('curse.maven:torohealth-damage-indicators-245733:2483817')
+    runtimeOnly rfg.deobf('curse.maven:ftb-utilities-forge-237102:3157548')
+    runtimeOnly rfg.deobf('curse.maven:ftb-library-legacy-forge-237167:2985811')
 
     if (project.use_mixins.toBoolean()) {
         // Change your mixin refmap name here:
