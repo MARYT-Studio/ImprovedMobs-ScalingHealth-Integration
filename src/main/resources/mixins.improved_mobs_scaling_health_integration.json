@@ -1,11 +1,12 @@
 {
-  "package": "world.maryt.improved_mobs_scaling_health_integration.mixins",
-  "mixins": [
+  "package" : "world.maryt.improved_mobs_scaling_health_integration.mixins",
+  "mixins" : [
     "improvedmobs.MixinDifficultyHandler",
     "improvedmobs.MixinEventHandlerAI",
     "improvedmobs.MixinGeneralHelperMethods",
     "scalinghealth.MixinDamageScaling",
-    "scalinghealth.MixinModifierHandler"
+    "scalinghealth.MixinModifierHandler",
+    "scalinghealth.MixinScalingHealthCommonEvents"
   ],
-  "refmap": "mixins.improved_mobs_scaling_health_integration.refmap.json"
+  "refmap" : "mixins.improved_mobs_scaling_health_integration.refmap.json"
 }
