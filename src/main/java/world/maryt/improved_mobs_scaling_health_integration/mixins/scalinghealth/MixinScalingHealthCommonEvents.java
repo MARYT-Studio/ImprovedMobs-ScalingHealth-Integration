@@ -18,13 +18,13 @@ public abstract class MixinScalingHealthCommonEvents {
 
     /**
      * @author RisingInIris2017
-     * @reason Only send message when SleepResult is OK
+     * @reason Only send message when it's night
      */
     @Overwrite
     @SubscribeEvent
     public void onPlayerSleepInBed(PlayerSleepInBedEvent event) {
         EntityPlayer player = event.getEntityPlayer();
-        if (!player.world.isRemote && warnWhenSleeping && forSleeping != 0.0F && event.getResultStatus().equals(EntityPlayer.SleepResult.OK)) {
+        if (!player.world.isRemote && warnWhenSleeping && forSleeping != 0.0F && !player.world.isDaytime()) {
             String override = sleepMessageOverride;
             if (!override.isEmpty()) {
                 player.sendMessage(new TextComponentString(override));
